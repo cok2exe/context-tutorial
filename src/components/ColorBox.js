@@ -32,21 +32,21 @@ const ColorBox = () => {
 */
 
 const ColorBox = () => {
-  const { state } = useContext(ColorContext);
+  const { state: {color, subcolor} } = useContext(ColorContext);
   return (
     <>
       <div
         style={{
           width: "64px",
           height: "64px",
-          backgroundColor: state.color
+          backgroundColor: color
         }}
       />
       <div
         style={{
           width: "32px",
           height: "32px",
-          backgroundColor: state.subcolor
+          backgroundColor: subcolor
         }}
       />
     </>
